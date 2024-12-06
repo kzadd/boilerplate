@@ -1,0 +1,57 @@
+# Coverage reports and testing
+coverage/
+
+# ESLint and Prettier cache
+.eslintcache
+.prettiercache
+
+# Editor-specific files and directories
+*.njsproj
+*.ntvs*
+*.sln
+*.suo
+*.sw?
+.idea/
+.vscode/
+
+# Environment variables
+*.local
+.env
+
+# Ignore .vscode except specific configurations
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Ignore build directories
+build/
+dist-ssr/
+dist/
+node_modules/
+
+# Ignore temporary files
+*.swp
+*.temp
+*.tmp
+
+# Logs and debug files
+*.log
+lerna-debug.log*
+logs/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# MacOS specific files
+.DS_Store
+
+# OS-specific files
+Thumbs.db
+
+# Optional lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# TypeScript specific
+*.tsbuildinfo
