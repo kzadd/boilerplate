@@ -79,12 +79,6 @@ export default tseslint.config(
       'react/react-in-jsx-scope': 'off',
       'react/self-closing-comp': 'warn',
       'react-hooks/rules-of-hooks': 'error',
-      'react-refresh/only-export-components': [
-        'warn',
-        {
-          allowConstantExport: true
-        }
-      ],
       'simple-import-sort/imports': [
         'warn',
         {

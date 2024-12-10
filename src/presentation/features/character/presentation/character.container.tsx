@@ -1,3 +1,4 @@
+import { Button } from '@shared/components'
 import { useCharacter } from '../application/hooks/use-character.hook'
 
 /**
@@ -19,6 +20,8 @@ const CharacterContainer = () => {
       {characters.map(item => (
         <div key={item.id}>{item.name}</div>
       ))}
+
+      <Button>Button</Button>
     </div>
   )
 }
