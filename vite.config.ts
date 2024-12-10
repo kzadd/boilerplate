@@ -40,31 +40,31 @@ const viteConfig = defineConfig({
  */
 const vitestConfig = defineVitestConfig({
   test: {
-    // coverage: {
-    //   exclude: [
-    //     '**/*.actions.ts',
-    //     '**/*.adapter.ts',
-    //     '**/*.config.*',
-    //     '**/*.d.ts',
-    //     '**/*.entity.ts',
-    //     '**/*.hook.ts',
-    //     '**/*.reducer.ts',
-    //     '**/*.repository.ts',
-    //     '**/*.service.ts',
-    //     '**/*.types.ts',
-    //     '**/__mocks__/**',
-    //     '**/__tests__/**',
-    //     '**/constants/**',
-    //     '**/index.*',
-    //     '**/middlewares/**',
-    //     '**/routing/**',
-    //     '**/state/**',
-    //     'coverage/**',
-    //     'dist/**',
-    //     'node_modules/**',
-    //     'public/**'
-    //   ]
-    // },
+    coverage: {
+      exclude: [
+        '**/*.actions.ts',
+        '**/*.adapter.ts',
+        '**/*.config.*',
+        '**/*.d.ts',
+        '**/*.entity.ts',
+        '**/*.hook.ts',
+        '**/*.reducer.ts',
+        '**/*.repository.ts',
+        '**/*.service.ts',
+        '**/*.types.ts',
+        '**/__mocks__/**',
+        '**/__tests__/**',
+        '**/constants/**',
+        '**/index.*',
+        '**/middlewares/**',
+        '**/routing/**',
+        '**/state/**',
+        'coverage/**',
+        'dist/**',
+        'node_modules/**',
+        'public/**'
+      ]
+    },
     css: true,
     environment: 'jsdom',
     globals: true,
