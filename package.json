@@ -73,11 +73,10 @@
   "name": "boilerplate",
   "private": true,
   "scripts": {
-    "build": "npm run clean && tsc -b && vite build",
+    "build": "rimraf dist && tsc -b && vite build",
     "build:dev": "env-cmd -f .env.dev npm run build",
     "build:local": "env-cmd -f .env.local npm run build",
     "build:prod": "env-cmd -f .env.prod npm run build",
-    "clean": "rimraf dist",
     "format": "prettier --write .",
     "format:lint": "npm run format && npm run lint",
     "lint": "eslint .",
@@ -88,8 +87,7 @@
     "start:local": "env-cmd -f .env.local npm run start",
     "start:prod": "env-cmd -f .env.prod npm run start",
     "test": "vitest run --passWithNoTests",
-    "test:coverage": "vitest run --coverage --passWithNoTests",
-    "test:ui": "vitest --ui --passWithNoTests",
+    "test:coverage": "npm run test --coverage",
     "test:watch": "vitest --watch --passWithNoTests"
   },
   "type": "module",

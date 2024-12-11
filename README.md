@@ -32,6 +32,5 @@ $ npm run lint         # ESLint
 ```bash
 npm run test           # Run tests
 npm run test:coverage  # Run tests and generate coverage reports
-npm run test:ui        # Run tests and open the UI
 npm run test:watch     # Run tests in watch mode
 ```
