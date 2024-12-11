@@ -79,7 +79,7 @@
     "build:prod": "env-cmd -f .env.prod npm run build",
     "format": "prettier --write .",
     "format:lint": "npm run format && npm run lint",
-    "lint": "eslint .",
+    "lint": "eslint src",
     "prepare": "husky",
     "preview": "vite preview",
     "start": "vite",
