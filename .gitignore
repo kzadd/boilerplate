@@ -6,9 +6,11 @@ coverage/
 .prettiercache
 
 # Editor-specific files and directories
+*.launch
 *.njsproj
 *.ntvs*
 *.sln
+*.sublime-workspace
 *.suo
 *.sw?
 .idea/
@@ -20,15 +22,25 @@ coverage/
 
 # Ignore .vscode except specific configurations
 !.vscode/extensions.json
+!.vscode/launch.json
 !.vscode/settings.json
+!.vscode/tasks.json
 
 # Ignore build directories
+.sass-cache/
+bazel-out/
 build/
 dist-ssr/
 dist/
 node_modules/
+out-tsc/
+typings/
 
 # Ignore temporary files
+*.backup
+*.bak
+*.old
+*.orig
 *.swp
 *.temp
 *.tmp
