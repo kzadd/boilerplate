@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from 'axios'
 
-import { AxiosHttpResponse, HttpHeadersOptions, HttpMethod, HttpRequestOptions } from '../../types/http.types'
-import { getCookie } from '../storages'
+import { AxiosHttpResponse, HttpHeadersOptions, HttpMethod, HttpRequestOptions } from '../types/http.types'
+import { getCookie } from './cookie.utils'
 
 /**
  * Creates headers for HTTP requests.

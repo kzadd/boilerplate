@@ -1,13 +1,13 @@
 import { http, HttpResponse } from 'msw'
 
-import { environment } from '../../shared/configs'
+import { API_BASE_URL } from '@shared/configs/environment.config'
 
 /**
  * characterMock handlers for the API.
  */
-const characterMock = [
-  http.get(`${environment.apiBaseUrl}/character`, () => {
-    return HttpResponse.json({
+export const characterMock = [
+  http.get(`${API_BASE_URL}/character`, () => {
+    const response = {
       errors: null,
       payload: {
         informacion: {
@@ -22,12 +22,28 @@ const characterMock = [
             id: '1',
             nombre: 'Rick Sanchez',
             tipo: ''
+          },
+          {
+            especie: 'Humano',
+            estado: 'Vivo',
+            genero: 'Masculino',
+            id: '2',
+            nombre: 'Morty Smith',
+            tipo: ''
+          },
+          {
+            especie: 'Humano',
+            estado: 'Vivo',
+            genero: 'Masculino',
+            id: '3',
+            nombre: 'Summer Smith',
+            tipo: ''
           }
         ]
       },
       success: 'OK'
-    })
+    }
+
+    return HttpResponse.json(response)
   })
 ]
-
-export default characterMock

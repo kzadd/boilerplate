@@ -7,7 +7,7 @@ import { BaseError, CreateErrorOptions, CreateErrorResponse } from '../types/exc
  * This function helps to create an error with a consistent structure, which can be serialized and converted.
  * If the error is not an AxiosError, it creates a generic error response using the error message.
  */
-const createError = (options: CreateErrorOptions): CreateErrorResponse => {
+export const createError = (options: CreateErrorOptions): CreateErrorResponse => {
   const { code, originalError, reason } = options
 
   const isAxiosError = originalError instanceof AxiosError
@@ -35,5 +35,3 @@ const createError = (options: CreateErrorOptions): CreateErrorResponse => {
     }
   }
 }
-
-export default createError

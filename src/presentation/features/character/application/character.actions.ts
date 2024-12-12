@@ -1,6 +1,6 @@
 import { createAction, Dispatch } from '@reduxjs/toolkit'
 
-import { createError } from '@shared/exceptions'
+import { createError } from '@shared/exceptions/create-error.exception'
 import { CharacterAdapter } from '../infrastructure/character.adapter'
 import { ApiCharacterRepository } from '../infrastructure/character.service'
 import { CharacterActionTypes, CharacterError, CharacterSuccess } from './character.types'

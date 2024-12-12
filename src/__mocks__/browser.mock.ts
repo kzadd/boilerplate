@@ -1,6 +1,6 @@
 import { setupWorker } from 'msw/browser'
 
-import { characterMock } from './handlers'
+import { characterMock } from './handlers/character-mock.handlers'
 
 /**
  * Mock worker for the browser.

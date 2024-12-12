@@ -36,13 +36,8 @@
     --secondary: 240 4.8% 95.9%;
   }
 
-  * {
-    @apply border-border;
-  }
-
   html {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+    @apply antialiased;
   }
 
   body {

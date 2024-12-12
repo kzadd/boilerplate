@@ -1,10 +1,10 @@
-import { environment } from '../shared/configs'
+import { ENABLE_MOCKING } from '@shared/configs/environment.config'
 
 /**
  * Initializes mock service workers if the environment variable `enableMocking` is set to 'true'.
  */
 export const initializeMockServiceWorker = async () => {
-  if (environment.enableMocking !== 'true') return
+  if (ENABLE_MOCKING !== 'true') return
 
   const { worker } = await import('./browser.mock')
 

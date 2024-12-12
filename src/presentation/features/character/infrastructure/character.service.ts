@@ -1,5 +1,5 @@
-import { environment } from '@shared/configs'
-import { getJsonRequest } from '@shared/utils'
+import { API_BASE_URL } from '@shared/configs/environment.config'
+import { getJsonRequest } from '@shared/utils/http.utils'
 import { CharacterRepository } from '../domain/character.repository'
 
 /**
@@ -8,6 +8,6 @@ import { CharacterRepository } from '../domain/character.repository'
  */
 export const ApiCharacterRepository: CharacterRepository = {
   getCharacters() {
-    return getJsonRequest(`${environment.apiBaseUrl}/character`, { isPublic: true })
+    return getJsonRequest(`${API_BASE_URL}/character`, { isPublic: true })
   }
 }

@@ -1,7 +1,7 @@
 import Cookie from 'js-cookie'
 
-import { createError } from '../../exceptions'
-import { CookieOptions } from '../../types/storage.types'
+import { createError } from '../exceptions/create-error.exception'
+import { CookieOptions } from '../types/storage.types'
 
 /**
  * Deletes a cookie by its key.

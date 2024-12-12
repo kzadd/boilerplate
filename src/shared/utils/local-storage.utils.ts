@@ -1,5 +1,5 @@
-import { createError } from '../../exceptions'
-import { LocalStorageOptions } from '../../types/storage.types'
+import { createError } from '../exceptions/create-error.exception'
+import { LocalStorageOptions } from '../types/storage.types'
 
 /**
  * Deletes an item from localStorage by its key.

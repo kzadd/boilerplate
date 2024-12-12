@@ -1,15 +1,15 @@
 import { Suspense } from 'react'
 import { Navigate, Outlet, RouteObject } from 'react-router-dom'
 
-import { SuspenseLoading } from '../../shared/components'
-import { publicRoutes } from '../../shared/constants'
+import { SuspenseLoading } from '@shared/components/commons'
+import { publicRoutes } from '@shared/constants/public-routes.constant'
 import { Characters, NotFound } from './lazy.routes'
 
 /**
  * Application router configuration.
  * This defines the routes and their associated components, including lazy-loaded pages and a fallback loading state.
  */
-const router: RouteObject[] = [
+export const rootRouter: RouteObject[] = [
   {
     children: [
       {
@@ -33,5 +33,3 @@ const router: RouteObject[] = [
     path: publicRoutes.root
   }
 ]
-
-export default router

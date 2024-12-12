@@ -6,11 +6,13 @@ import svgr from 'vite-plugin-svgr'
 import tsconfigPaths from 'vite-tsconfig-paths'
 import { defineConfig as defineVitestConfig } from 'vitest/config'
 
+const { VITE_APP_BASE_URL: BASE_URL = '/', VITE_APP_ENVIRONMENT: ENVIRONMENT = '' } = process.env
+
 /**
  * Vite configuration
  */
 const viteConfig = defineConfig({
-  base: process.env.VITE_APP_BASE_URL ?? '/',
+  base: BASE_URL,
   build: {
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
@@ -24,15 +26,12 @@ const viteConfig = defineConfig({
         }
       }
     },
-    sourcemap: process.env.VITE_APP_ENVIRONMENT !== 'prod'
+    sourcemap: ENVIRONMENT !== 'prod'
   },
   optimizeDeps: {
     include: ['@reduxjs/toolkit', 'axios', 'react', 'react-dom', 'react-redux', 'react-router-dom']
   },
-  plugins: [eslint(), react(), svgr(), tsconfigPaths()],
-  server: {
-    port: parseInt(process.env.VITE_APP_PORT ?? '3000', 10)
-  }
+  plugins: [eslint(), react(), svgr(), tsconfigPaths()]
 })
 
 /**

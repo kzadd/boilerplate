@@ -3,14 +3,14 @@ import './shared/styles/globals.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Provider as ReduxProvider } from 'react-redux'
 
-import { store } from './core/state'
-import { router } from './presentation/routing'
+import { store } from './core/state/store.config'
+import { rootRouter } from './presentation/routing/root-router'
 
 /**
  * The main application component
  */
 const App = () => {
-  const browserRouter = createBrowserRouter(router)
+  const browserRouter = createBrowserRouter(rootRouter)
 
   return (
     <ReduxProvider store={store}>

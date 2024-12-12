@@ -12,7 +12,7 @@ const initialState: CharacterState = {
 /**
  * The reducer responsible for handling character actions.
  */
-const characterReducer = createReducer(initialState, builder => {
+export const characterReducer = createReducer(initialState, builder => {
   builder
     .addCase(onGetCharacters, state => {
       state.characters = []
@@ -31,5 +31,3 @@ const characterReducer = createReducer(initialState, builder => {
     })
     .addDefaultCase(state => state)
 })
-
-export default characterReducer
