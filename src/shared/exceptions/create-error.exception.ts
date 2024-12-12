@@ -5,7 +5,6 @@ import { BaseError, CreateErrorOptions, CreateErrorResponse } from '../types/exc
 /**
  * Factory function that creates a standardized error.
  * This function helps to create an error with a consistent structure, which can be serialized and converted.
- * If the error is not an AxiosError, it creates a generic error response using the error message.
  */
 export const createError = (options: CreateErrorOptions): CreateErrorResponse => {
   const { code, originalError, reason } = options

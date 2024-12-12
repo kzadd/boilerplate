@@ -7,9 +7,9 @@ import { Characters, NotFound } from './lazy.routes'
 
 /**
  * Application router configuration.
- * This defines the routes and their associated components, including lazy-loaded pages and a fallback loading state.
+ * This defines the routes and their associated components.
  */
-export const rootRouter: RouteObject[] = [
+export const rootRoutes: RouteObject[] = [
   {
     children: [
       {

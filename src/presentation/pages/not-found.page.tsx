@@ -1,5 +1,5 @@
 /**
- * The NotFound page
+ * The NotFound page.
  */
 const NotFound = () => {
   return <p>NotFound</p>

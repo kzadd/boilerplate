@@ -10,10 +10,7 @@ export interface CreateErrorOptions {
   reason?: string | null
 }
 
-export interface CreateErrorResponse {
-  code: number | null
-  originalError: Error
-  reason: string
+export interface CreateErrorResponse extends BaseError {
   toJSON: () => string
   toObject: () => BaseError
 }

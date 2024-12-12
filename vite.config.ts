@@ -9,7 +9,7 @@ import { defineConfig as defineVitestConfig } from 'vitest/config'
 const { VITE_APP_BASE_URL: BASE_URL = '/', VITE_APP_ENVIRONMENT: ENVIRONMENT = '' } = process.env
 
 /**
- * Vite configuration
+ * Vite configuration.
  */
 const viteConfig = defineConfig({
   base: BASE_URL,
@@ -35,7 +35,7 @@ const viteConfig = defineConfig({
 })
 
 /**
- * Vitest configuration
+ * Vitest configuration.
  */
 const vitestConfig = defineVitestConfig({
   test: {

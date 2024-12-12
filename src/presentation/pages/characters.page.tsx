@@ -1,7 +1,7 @@
 import { CharacterContainer } from '../features/character'
 
 /**
- * The Characters page
+ * The Characters page.
  */
 const Characters = () => {
   return <CharacterContainer />

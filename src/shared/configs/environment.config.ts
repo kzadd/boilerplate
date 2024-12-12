@@ -1,6 +1,6 @@
 /**
  * Application environment configuration.
- * Stores the API base URL and the current environment mode (e.g., development, production)
+ * Stores the API base URL and the current environment mode (e.g., development, production).
  */
 export const {
   VITE_APP_API_BASE_URL: API_BASE_URL = '',

@@ -4,13 +4,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Provider as ReduxProvider } from 'react-redux'
 
 import { store } from './core/state/store.config'
-import { rootRouter } from './presentation/routing/root-router'
+import { rootRoutes } from './presentation/routing/root-routes'
 
 /**
- * The main application component
+ * The main application component.
  */
 const App = () => {
-  const browserRouter = createBrowserRouter(rootRouter)
+  const browserRouter = createBrowserRouter(rootRoutes)
 
   return (
     <ReduxProvider store={store}>

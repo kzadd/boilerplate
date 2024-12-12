@@ -14,6 +14,6 @@ const tree = (
 )
 
 /**
- * Initializes the mock service worker and renders the React application tree to the DOM root element
+ * Initializes the mock service worker and renders the react application.
  */
 initializeMockServiceWorker().then(() => root.render(tree))
